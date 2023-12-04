@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Bree Serif', serif;
+}
+
+/* ----------Navigation Bar----------- */
+
+#navbar {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    z-index: 2;
+}
+
+.logo img {
+    height: 60px;
+    margin: 3px 6px;
+    padding: 0px 20px;
+    border-radius: 50%;
+}
+
+.nav-list ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-list ul li a {
+    padding: 6px 22px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Bree Serif', serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.nav-list ul li a:hover {
+    background-color: white;
+    border-radius: 23px;
+    color: black;
+    text-align: center;
+}
+
+/* -------------hero Section-------------- */
+
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px 200px;
+    height: 700px;
+}
+
+.hero-section::before{
+    content: "";
+    width: 100%;
+    position: absolute;
+    background-image: url(top-view-food-frame-with-copy-space.jpg);
+    background-size: cover;
+    top: 0px;
+    left: 0px;
+    height: 700px;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+.hero-section h1 {
+    padding-bottom: 20px;
+    font-size: 4rem;
+    color: white;
+    font-family: 'Bree Serif', serif;
+    text-align: center;
+}
+
+.hero-section p {
+    font-size: 1.3rem;
+    color: white;
+    font-family: 'Bree Serif', serif;
+    text-align: center;
+}
+
+.hero-section button {
+    height: 40px;
+    width: 150px;
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+    background-color: rgb(204, 66, 66);
+    border: 2px white solid;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+.hero-section button a {
+    padding: 6px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+/* -----Menu Bar------- */
+
+.main-heading {
+    margin: 2px 15px;
+    font-size: 3.5rem;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+.menu-area {
+    margin: 34px;
+    display: flex;
+}
+.box {
+    padding: 34px;
+    margin: 2px 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px brown solid;
+    border-radius: 23px;
+    background-color: #f2f2f2;
+}
+
+.box img {
+    height: 200px;
+    margin: auto;
+    display: block;
+}
+
+.box .menu-name {
+    margin: 10px;
+    font-size: 2.5rem;
+    font-family: 'Bree Serif', serif;
+    text-align: center;
+}
+
+.box .menu-explain {
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+    text-align: center;
+}
+
+/* ----------Services section ---------- */
+
+#services {
+    overflow: hidden;
+}
+
+.box1 {
+    margin: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #f2f2f2;
+    font-family: 'Bree Serif', serif;
+}
+
+.box1 .content1 {
+    height: 450px;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px brown solid; */
+    border-radius: 23px;
+    
+}
+
+.second-heading {
+    font-size: 3.1rem;
+    padding: 5px 20px;
+    font-family: 'Bree Serif', serif;
+}
+
+.box1 .content1 p {
+    padding: 25px;
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Bree Serif', serif;
+}
+
+.box1 .image1 img {
+    height: 380px;
+    border-radius: 23px;
+}
+
+
+/* =======Our clients section ======= */
+
+#clients-section {
+    position: relative;
+    margin-bottom: 0px;
+}
+
+#clients-section::before {
+    content: "";
+    width: 100%;
+    position: absolute;
+    background-image: url(brooke-lark-08bOYnH_r_E-unsplash.jpg);
+    background-size: cover;
+    top: 0px;
+    left: 0px;
+    height: 550px;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+.clients {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: -4;
+}
+
+.clients .logoC img {
+    height: 130px;
+    margin: 60px;
+    border-radius: 17px;
+    
+}
+
+/* ----------- Contact Area ------------ */
+
+#contact {
+    width: 100%;
+    background-color: black;
+    overflow: hidden;
+}
+
+.contact-area {
+    /* height: 500px; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 50px;
+}
+
+.contact-area .foot-box {
+    height: 300px;
+    width: 300px;
+    margin: 40px 40px;
+}
+
+.contact-area .foot-box h3 {
+    color: white;
+    font-size: 1.4rem;
+    text-align: start;
+    margin: 20px;
+    padding: 0px 10px;
+}
+
+.contact-area .foot-box p {
+    color: white;
+    font-size: 1.2rem;
+    text-align:start;
+    margin: 20px;
+    padding: 0px 10px;
+}
+
+.contact-area .foot-box .social-logo {
+    margin: 20px;
+}
+
+.contact-area .foot-box .social-logo img {
+    margin: 5px;
+    padding: 0px 3px;
+    text-align: start;
+    height: 45px;
+}
+
+/* -----footer --------- */
+
+.copyright {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+}
+
+.copyright p {
+    margin: 30px;
+    pad: 5px;
+    font-size: 1.5rem;
+}
